@@ -1,0 +1,65 @@
+html {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif; 
+}
+
+body {
+    background-image: url("/assets/images/background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.jumbotron {
+    background-color: rgb(0,0,0,0.8);
+}
+
+.modal-title {
+    color: black;
+    font-weight: bold;
+}
+
+#previous-notes {
+    color: blue;
+    text-align: center;
+}
+
+.panel-default {
+    background-color: rgb(0,0,0,0);
+}
+
+.panel-heading {
+    font-size: 28px;
+}
+
+.panel-body {
+    background-color: rgb(0,0,0,0.8);
+    font-size: 20px;
+}
+
+.deleteNote {
+	display: inline-block;
+}
+
+.previousNotes {
+    display: inline-block;
+    width: 90%
+}
+
+#scrape {
+    margin: 8px 0px;
+}
+
+#scrapedCount {
+    color: red;
+}
+
+#titleByline {
+    color: blue;
+}

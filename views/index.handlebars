@@ -1,0 +1,36 @@
+<!-- Homepage -->
+
+<div class="container">
+    <div class="col-md-12 jumbotron">
+        <div class="text-center">
+            <h1>Google Mind Control Module #7 - The News</h1>
+            <h3 id="titleByline">Uniquely curated to not challenge your preconceived and ill-informed notions of the world</h3>
+            <h4 id="scrapedCount"></h4>
+        </div>
+        
+
+    </div>
+    <div class="col-md-12">
+        {{#if article}}
+            {{#each article}}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    {{this.title}}
+                </div>
+                <div class="panel-body">
+                    <p> {{this.summary}}</p>
+                    <a href={{this.link}} target="_blank">{{this.link}}</a>
+                    <br><br>
+                    <button type="button" class="btn btn-success save" data-id={{this._id}}>Save Article</button>
+                </div>
+            </div>
+            {{/each}}
+        {{else}}
+        <div class="panel panel-default">
+            <div class="panel-body">
+            <h4>You have not scraped anything yet Hot Shot.</h4>
+            </div>
+         </div>
+        {{/if}}
+    </div>
+</div>
