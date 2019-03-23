@@ -52,8 +52,13 @@ body {
     width: 90%
 }
 
-#scrape {
-    margin: 8px 0px;
+.navButtons {
+    margin: 8px;
+    color: white;
+}
+
+a {
+    color: white;
 }
 
 #scrapedCount {
